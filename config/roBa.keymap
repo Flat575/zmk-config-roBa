@@ -69,13 +69,13 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W                    &kp E   &kp R                   &kp T                                                &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LCTRL A       &kp S                    &kp D   &kp F                   &kp G            &kp LS(LG(S))      &kp MINUS        &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X                    &kp C   &kp V                   &kp B            &trans             &kp SEMICOLON    &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&bl BL_TOG        &lt_to_layer_0 6 ESCAPE  &trans  &mt LEFT_ALT LC(GRAVE)  &mt LCTRL SPACE  &kp LEFT_WIN       &lt 1 BACKSPACE  &lt 2 ENTER                             &kp RIGHT_ALT
+&kp Q             &kp W                    &kp E   &kp R                    &kp T                                             &kp Y        &kp U  &kp I      &kp O    &kp P
+&mt LCTRL A       &kp S                    &kp D   &kp F                    &kp G         &kp LS(LG(S))      &kp MINUS        &kp H        &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z  &kp X                    &kp C   &kp V                    &kp B         &kp GRAVE          &kp SEMICOLON    &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&bl BL_TOG        &lt_to_layer_0 6 ESCAPE  &trans  &mt LC(LCTRL) LC(SPACE)  &kp LEFT_ALT  &kp LEFT_WIN       &lt 1 BACKSPACE  &lt 2 ENTER                             &kp RIGHT_ALT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         ARROW {
@@ -89,10 +89,10 @@
 
         number {
             bindings = <
-&kp ESCAPE                   &trans  &trans  &trans            &trans                         &kp N1         &kp N2            &kp N3             &kp N4     &kp N5
-&trans                       &trans  &trans  &trans            &trans  &trans      &trans     &kp N6         &kp N7            &kp N8             &kp N9     &kp N0
-&lt_to_layer_0 3 LEFT_SHIFT  &trans  &trans  &trans            &trans  &trans      &kp GRAVE  &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL
-&trans                       &trans  &trans  &lt 5 LEFT_SHIFT  &trans  &trans      &trans     &trans                                                         &trans
+&lt_to_layer_0 5 ESCAPE      &trans  &trans  &trans  &trans                         &kp N1         &kp N2            &kp N3             &kp N4     &kp N5
+&trans                       &trans  &trans  &trans  &trans  &trans      &trans     &kp N6         &kp N7            &kp N8             &kp N9     &kp N0
+&lt_to_layer_0 3 LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans      &kp GRAVE  &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL
+&trans                       &trans  &trans  &trans  &trans  &trans      &trans     &trans                                                         &trans
             >;
         };
 
