@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
 #define SCROLL 5
@@ -68,10 +69,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W   &kp E   &kp R                &kp T                                                       &kp Y                    &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S   &kp D   &kp F                &kp G        &kp LS(LG(S))                   &kp MINUS      &kp H                    &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X   &kp C   &kp V                &kp B        &kp COLON                       &kp SEMICOLON  &kp N                    &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&bl BL_TOG        &trans  &trans  &mt LCTRL LC(GRAVE)  &lt 2 SPACE  &lt_to_layer_0 2 LC(GRAVE)      &lt 3 ENTER    &mt RIGHT_WIN BACKSPACE                             &kp DEL
+&kp Q             &kp W                    &kp E   &kp R                &kp T                                                       &kp Y                    &kp U  &lt 0 I    &kp O    &kp P
+&kp A             &kp S                    &kp D   &kp F                &kp G        &kp LS(LG(S))                   &kp MINUS      &kp H                    &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z  &kp X                    &kp C   &kp V                &kp B        &kp COLON                       &kp SEMICOLON  &kp N                    &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&bl BL_TOG        &lt_to_layer_0 5 ESCAPE  &trans  &mt LCTRL LC(GRAVE)  &lt 2 SPACE  &lt_to_layer_0 2 LC(GRAVE)      &lt 3 ENTER    &mt RIGHT_WIN BACKSPACE                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
@@ -106,23 +107,14 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans          &trans    &msc SCRL_UP    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &msc SCRL_LEFT  &mkp MB1  &mkp MB3        &mkp MB2  &msc SCRL_RIGHT
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans          &trans    &msc SCRL_DOWN  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                              &trans
             >;
         };
 
-        SCROLL {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_6 {
+        BT_CTRL {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
