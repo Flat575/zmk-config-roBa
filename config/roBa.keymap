@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
 #define SCROLL 5
@@ -107,10 +106,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &mmv MOVE_Y 600  &mmv MOVE_X 600  &trans                      &trans          &trans    &msc SCRL_UP    &trans    &trans
-&trans  &trans  &mmv MOVE_Y 400  &mmv MOVE_X 400  &trans  &trans      &trans  &msc SCRL_LEFT  &mkp MB1  &mkp MB3        &mkp MB2  &msc SCRL_RIGHT
-&trans  &trans  &trans           &trans           &trans  &trans      &trans  &trans          &trans    &msc SCRL_DOWN  &trans    &trans
-&trans  &trans  &trans           &trans           &trans  &trans      &trans  &trans                                              &trans
+&trans  &trans  &trans  &trans       &trans                      &trans          &trans    &msc SCRL_UP    &trans    &trans
+&trans  &trans  &gresc  &key_repeat  &trans  &trans      &trans  &msc SCRL_LEFT  &mkp MB1  &mkp MB3        &mkp MB2  &msc SCRL_RIGHT
+&trans  &trans  &trans  &trans       &trans  &trans      &trans  &trans          &trans    &msc SCRL_DOWN  &trans    &trans
+&trans  &trans  &trans  &trans       &trans  &trans      &trans  &trans                                              &trans
             >;
         };
 
