@@ -68,10 +68,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W   &kp E          &kp R             &kp T                                                &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LCTRL A       &kp S   &kp D          &lt 3 F           &kp G            &kp LS(LG(S))      &kp MINUS        &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X   &kp C          &kp V             &kp B            &kp GRAVE          &kp SQT          &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&mo 5             &trans  &kp LC(GRAVE)  &kp LC(LEFT_ALT)  &mt LCTRL SPACE  &kp LEFT_WIN       &lt 1 BACKSPACE  &lt 2 ENTER                             &kp RIGHT_ALT
+&kp Q             &kp W   &kp E          &kp R         &kp T                                                &kp Y        &kp U  &kp I      &kp O    &kp P
+&mt LCTRL A       &kp S   &kp D          &lt 3 F       &kp G            &kp LS(LG(S))      &kp MINUS        &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X   &kp C          &kp V         &kp B            &kp GRAVE          &kp SQT          &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&mo 5             &trans  &kp LC(GRAVE)  &kp LEFT_ALT  &mt LCTRL SPACE  &kp LEFT_WIN       &lt 1 BACKSPACE  &lt 2 ENTER                             &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp LG(TAB) LG(LS(TAB))>;
